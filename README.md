@@ -37,6 +37,16 @@ Confirm that it is working by typing ```lalign36 -h``` in your planned working d
 7. Align read to consensus and get variant calls
 8. Calculate statistics and assign read.
 
+Alternative pipeline (potentially more computionally sound)
+1. Demultiplex reads using - Demultiplexer
+3. Map each sequence to the ITS1 database and then ITS2 database - BLAST
+4. Extract matches with %id higher than or equal to 80%
+5. Align extracted matches - MAFFT
+6. Align consensus match with read - LALIGN
+7. Nanopolish
+8. Variantcalling
+9. Calculate statistics and combine results for ITS1 & ITS2
+
 ## About the strategy
 
 ### LALIGN36
