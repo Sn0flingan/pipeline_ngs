@@ -36,3 +36,14 @@ Confirm that it is working by typing ```lalign36 -h``` in your planned working d
 6. Variant calling
 7. Align read to consensus and get variant calls
 8. Calculate statistics and assign read.
+
+## About the strategy
+
+### LALIGN36
+After trying several pairwise aligners:
+- Smith Waterman
+- LALIGN
+
+It was noted that LALIGN performed significantly better.
+
+It was confirmed that LALIGN does also align the reverse compliment sequence by simply running the same sequence in both original and reverse compliment. In both cases the exact same identity was returned.
