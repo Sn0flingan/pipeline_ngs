@@ -8,6 +8,24 @@ Pipeline code for my ngs project.
 - BLAST
 - MAFFT
 
+### Installation
+
+#### LALIGN36
+```
+git clone https://github.com/wrpearson/fasta36.git
+cd fasta36/src
+make -f ../make/Makefile.os_x86_64 all
+```
+Change ```Makefile.os_x86_64``` according to your operating system.
+
+Then add the program to PATH, check the path in current directory using ```pwd```.
+
+```
+export PATH=$PATH:<PATH-TO-FASTA36-FOLDER>/bin
+```
+
+Confirm that it is working by typing ```lalign36 -h``` in your planned working directory.
+
 ## Pipeline
 
 1. Demultiplex reads using - Demultiplexer
